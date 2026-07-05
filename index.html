@@ -1,145 +1,237 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Montserrat Porras</title>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Montserrat Porras, Software Engineering student and web developer.">
+  <title>Montserrat Porras | Portfolio</title>
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link rel="icon" href="cv-montse (4) copy.png" type="img/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/logos/favicon.png" type="image/png">
+</head>
+<body>
+  <header class="site-header" aria-label="Main navigation">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Montserrat Porras home">
+        <img src="assets/logos/favicon.png" alt="" aria-hidden="true">
+        <span data-i18n="brandName">Montserrat Porras</span>
+      </a>
 
-    <body>
+      <div class="nav-menu" aria-label="Primary links">
+        <a class="nav-link" href="#about" data-i18n="navAbout">About</a>
+        <a class="nav-link" href="#technologies" data-i18n="navTechnologies">Technologies</a>
+        <a class="nav-link" href="#portfolio" data-i18n="navPortfolio">Portfolio</a>
+        <a class="nav-link" href="#contact" data-i18n="navContact">Contact</a>
+      </div>
 
-    <header class="header__">
-    <nav>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact me</a>
+      <div class="language-menu">
+        <button class="language-button" id="languageButton" type="button" aria-expanded="false" aria-controls="languageOptions">
+          <span class="language-flag flag-us" id="languageFlag" aria-hidden="true"></span>
+          <span id="languageLabel">EN</span>
+          <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+        </button>
+        <div class="language-options" id="languageOptions" role="menu" aria-label="Select language">
+          <button type="button" role="menuitem" data-lang="en"><span class="language-flag flag-us" aria-hidden="true"></span> English</button>
+          <button type="button" role="menuitem" data-lang="es"><span class="language-flag flag-ar" aria-hidden="true"></span> Español</button>
+          <button type="button" role="menuitem" data-lang="pt"><span class="language-flag flag-br" aria-hidden="true"></span> Português</button>
+        </div>
+      </div>
     </nav>
-    </header>
+  </header>
 
-    <h1>Montserrat Porras</h1>
-
-    <a class="hero-btn" href="cv.pdf" download>Download Resume</a>
-
-    <img class="img__" src="cv-montse (1).png" alt="Profile">
-
-    <section id="about" class="about">
-    <h2>About Me</h2>
-    <p class="subtitle">Software Engineering Student & Web Developer</p>
-
-    <h3>Programming Languages</h3>
-    <div class="skills-grid">
-        <div class="skill-item" style="--brand:#f7df1e">
-        <i class="devicon-javascript-plain"></i>
-        <span>JavaScript</span>
+  <main id="home">
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow" data-i18n="heroEyebrow">Software Engineering Student & Web Developer</p>
+          <h1 data-i18n="heroTitle">Montserrat Porras</h1>
+          <p class="hero-text" data-i18n="heroText">I build thoughtful digital experiences with clean interfaces, reliable code, and a strong focus on turning ideas into useful products.</p>
+          <div class="hero-actions" aria-label="Main actions">
+            <a class="btn btn-primary" href="assets/documents/cv-montserrat-porras.pdf" download>
+              <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+              <span data-i18n="downloadResume">Download Resume</span>
+            </a>
+            <a class="btn btn-secondary" href="#portfolio">
+              <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+              <span data-i18n="viewProjects">View Projects</span>
+            </a>
+          </div>
         </div>
 
-        <div class="skill-item" style="--brand:#3776ab">
-        <i class="devicon-python-plain"></i>
-        <span>Python</span>
+        <div class="hero-media" data-reveal>
+          <div class="profile-frame">
+            <div class="profile-crop">
+              <img src="assets/images/profile-montserrat.png" alt="Portrait of Montserrat Porras" class="profile-image">
+            </div>
+          </div>
         </div>
-    </div>
-
-    <h3>Frontend Development</h3>
-    <div class="skills-grid">
-        <div class="skill-item" style="--brand:#e34f26">
-        <i class="devicon-html5-plain"></i>
-        <span>HTML5</span>
-        </div>
-
-        <div class="skill-item" style="--brand:#1572b6">
-        <i class="devicon-css3-plain"></i>
-        <span>CSS3</span>
-        </div>
-    </div>
-
-    <h3>Other Tools & Technologies</h3>
-    <div class="skills-grid">
-
-        <div class="skill-item" style="--brand:#31a8ff">
-        <i class="devicon-photoshop-plain"></i>
-        <span>Adobe Photoshop</span>
-        </div>
-
-        <div class="skill-item" style="--brand:#ff9a00">
-        <i class="devicon-illustrator-plain"></i>
-        <span>Adobe Illustrator</span>
-        </div>
-
-        <div class="skill-item" style="--brand:#31a8ff">
-        <span class="iconify" data-icon="simple-icons:adobelightroom"></span>
-        <span>Lightroom</span>
-        </div>
-
-        <div class="skill-item" style="--brand:#f05032">
-        <i class="devicon-git-plain"></i>
-        <span>Git</span>
-        </div>
-
-        <div class="skill-item" style="--brand:#ffffff">
-        <i class="devicon-github-original"></i>
-        <span>GitHub</span>
-        </div>
-
-        <div class="skill-item" style="--brand:#007acc">
-        <i class="devicon-vscode-plain"></i>
-        <span>Visual Studio</span>
-        </div>
-
-        <div class="skill-item" style="--brand:#a970ff">
-        <i class="fa-solid fa-people-group"></i>
-        <span>Scrum / agile </span>
-        </div>
-
-        <div class="skill-item" style="--brand:#d83b01">
-        <span class="iconify" data-icon="simple-icons:microsoftoffice"></span>
-        <span>Microsoft Office</span>
-        </div>
-
-    </div>
+      </div>
     </section>
-    <section id="portfolio" class="portfolio"> 
-        <h2>My Portfolio</h2> 
-        <p class="portfolio-subtitle"> A collection of projects I've developed </p> 
-        <div class="portfolio-grid"> 
-            <article class="project-card"> 
-            <div class="project-image"> 
-                <img src="Captura de pantalla 2026-01-17 185233.png" alt="El Pana Arepas Website"> </div> 
-                <div class="project-content"> 
-                <h3>El Pana Arepas</h3> 
-                <p> Online ordering website for a local arepas business, featuring product customization, real-time price calculation, and automatic order submission via WhatsApp. </p> 
-                <div class="project-tech"> 
-                    <i class="devicon-html5-plain"></i> 
-                    <i class="devicon-css3-plain"></i> 
-                    <i class="devicon-javascript-plain"></i> 
-                </div> <div class="project-links"> 
-                    <a href="https://montseporras.github.io/El-Pana/" target="_blank" class="btn-project">Online Web</a> 
-                    </div> 
-            </article> 
-            </div> 
-        </section> 
-        <section id="contact" class="contact"> 
-            <h2>Contact me</h2> 
-            <p class="portfolio-subtitle"> I don’t just build IT solutions — I craft experiences that matter. From Argentina, I collaborate across borders, transforming challenges into meaningful impact. For me, innovation isn’t just work — it’s the way to create lasting change. Let’s turn ideas into impact, together. </p> 
-            <div class="project-links"> 
-            <a class="btn-project" href="mailto:montseporrasss@gmail.com">Email me </a>
-            </div> 
-            </div> 
-        </section>
 
-    <footer class="footer__">
-    <nav>
-        <a href="https://www.linkedin.com/in/montserrat-porras-493411218/" target="_blank">LINKEDIN</a>
-        <a href="https://github.com/montseporras" target="_blank">GITHUB</a>
-        <a href="https://www.instagram.com/montseporrass?igsh=YnVkMnB3d3cyMDY%3D&utm_source=qr" target="_blank">INSTAGRAM</a>
-    </nav>
-    </footer>
+    <section id="about" class="about section-pad">
+      <div class="container split-layout">
+        <div data-reveal>
+          <p class="section-kicker" data-i18n="aboutKicker">About me</p>
+          <h2 data-i18n="aboutTitle">Focused on useful, polished and scalable web solutions.</h2>
+        </div>
+        <div class="about-panel" data-reveal>
+          <p data-i18n="aboutText">I am a Software Engineering student and web developer from Argentina. I enjoy combining technical thinking with visual care to create responsive websites, practical workflows, and digital experiences that feel clear, modern, and easy to use.</p>
+          <div class="quick-facts" aria-label="Professional highlights">
+            <span><i class="fa-solid fa-code" aria-hidden="true"></i><span data-i18n="factFrontend">Frontend development</span></span>
+            <span><i class="fa-solid fa-server" aria-hidden="true"></i><span data-i18n="factBackend">Backend foundations</span></span>
+            <span><i class="fa-solid fa-database" aria-hidden="true"></i><span data-i18n="factData">Data-driven projects</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-    </body>
-    </html>
+    <section id="technologies" class="technologies section-pad">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker" data-i18n="techKicker">Technology stack</p>
+          <h2 data-i18n="techTitle">Tools I use to build digital products.</h2>
+          <p data-i18n="techText">Organized by area, with a consistent visual system ready to grow.</p>
+        </div>
+
+        <div class="tech-categories">
+          <article class="tech-group" data-reveal>
+            <h3 data-i18n="groupLanguages">Programming Languages</h3>
+            <div class="tech-grid">
+              <div class="tech-card" style="--brand:#f7df1e"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+              <div class="tech-card" style="--brand:#3776ab"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+              <div class="tech-card" style="--brand:#6cc4ff"><i class="devicon-azuresqldatabase-plain colored"></i><span>SQL</span></div>
+            </div>
+          </article>
+
+          <article class="tech-group" data-reveal>
+            <h3>Frontend</h3>
+            <div class="tech-grid">
+              <div class="tech-card" style="--brand:#e34f26"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+              <div class="tech-card" style="--brand:#1572b6"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+              <div class="tech-card" style="--brand:#61dafb"><i class="devicon-react-original colored"></i><span>React</span></div>
+              <div class="tech-card" style="--brand:#6f42c1"><i class="devicon-axios-plain colored"></i><span>Axios</span></div>
+            </div>
+          </article>
+
+          <article class="tech-group" data-reveal>
+            <h3>Backend</h3>
+            <div class="tech-grid">
+              <div class="tech-card" style="--brand:#68a063"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+              <div class="tech-card" style="--brand:#ffffff"><i class="devicon-express-original"></i><span>Express.js</span></div>
+            </div>
+          </article>
+
+          <article class="tech-group" data-reveal>
+            <h3>Database</h3>
+            <div class="tech-grid">
+              <div class="tech-card" style="--brand:#cc2927"><i class="devicon-microsoftsqlserver-plain colored"></i><span>SQL Server</span></div>
+              <div class="tech-card" style="--brand:#003b57"><i class="devicon-sqlite-plain colored"></i><span>SQLite</span></div>
+            </div>
+          </article>
+
+          <article class="tech-group" data-reveal>
+            <h3 data-i18n="groupOther">Other Technologies</h3>
+            <div class="tech-grid tech-grid-wide">
+              <div class="tech-card" style="--brand:#f05032"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+              <div class="tech-card" style="--brand:#5c2d91"><i class="devicon-visualstudio-plain colored"></i><span>Visual Studio</span></div>
+              <div class="tech-card" style="--brand:#d83b01"><i class="fa-brands fa-microsoft"></i><span>Microsoft Office</span></div>
+              <div class="tech-card" style="--brand:#2496ed"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+              <div class="tech-card" style="--brand:#a970ff"><i class="fa-solid fa-people-group"></i><span>Scrum / Agile</span></div>
+              <div class="tech-card" style="--brand:#ff9a00"><i class="devicon-illustrator-plain colored"></i><span>Illustrator</span></div>
+              <div class="tech-card" style="--brand:#31a8ff"><i class="devicon-photoshop-plain colored"></i><span>Photoshop</span></div>
+              <div class="tech-card" style="--brand:#31a8ff"><span class="tech-monogram">Lr</span><span>Lightroom</span></div>
+              <div class="tech-card" style="--brand:#38d9c8"><i class="fa-solid fa-shield-halved"></i><span data-i18n="techCybersecurity">Cybersecurity</span></div>
+              <div class="tech-card" style="--brand:#ffcb6b"><i class="fa-solid fa-brain"></i><span data-i18n="techAI">AI</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section-pad">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker" data-i18n="portfolioKicker">Portfolio</p>
+          <h2 data-i18n="portfolioTitle">Selected projects.</h2>
+          <p data-i18n="portfolioText">A growing collection of practical web projects and product experiences.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card" data-reveal>
+            <a class="project-image" href="https://montseporras.github.io/El-Pana/" target="_blank" rel="noopener noreferrer" aria-label="Open El Pana Arepas website">
+              <img src="assets/images/project-el-pana.png" alt="Screenshot of El Pana Arepas website" loading="lazy">
+            </a>
+            <div class="project-content">
+              <div>
+                <p class="project-type" data-i18n="projectType">Online ordering website</p>
+                <h3 data-i18n="projectName">El Pana Arepas</h3>
+                <p data-i18n="projectDescription">Online ordering website for a local arepas business, featuring product customization, real-time price calculation, and automatic order submission via WhatsApp.</p>
+              </div>
+              <div class="project-tech" aria-label="Technologies used">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-primary btn-small" href="https://montseporras.github.io/El-Pana/" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i>
+                  <span data-i18n="viewProject">View Project</span>
+                </a>
+                <a class="btn btn-secondary btn-small is-disabled" aria-disabled="true" tabindex="-1">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <span data-i18n="githubSoon">GitHub soon</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!--
+          Add new projects below this line.
+          Duplicate an existing project card and replace the corresponding information.
+          -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-pad">
+      <div class="container contact-panel" data-reveal>
+        <div>
+          <p class="section-kicker" data-i18n="contactKicker">Contact</p>
+          <h2 data-i18n="contactTitle">Let's turn ideas into impact.</h2>
+          <p data-i18n="contactText">I do not just build IT solutions; I craft experiences that matter. From Argentina, I collaborate across borders, transforming challenges into meaningful digital work.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:montseporrasss@gmail.com">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span data-i18n="emailMe">Email me</span>
+          </a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/montserrat-porras-493411218/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            <span data-i18n="linkedin">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p data-i18n="footerRights">&copy; 2026 Montserrat Porras. All rights reserved.</p>
+      <nav aria-label="Social links">
+        <a href="https://www.linkedin.com/in/montserrat-porras-493411218/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/montseporras" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.instagram.com/montseporrass?igsh=YnVkMnB3d3cyMDY%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
 
